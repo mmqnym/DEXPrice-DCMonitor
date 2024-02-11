@@ -1,11 +1,13 @@
 # DEXPrice-DCMonitor
 
 > 這是一個使用 [DexScreener](https://docs.dexscreener.com/) API 監控價格的 Discord 機器人。
+
 > This is a Discord bot that monitors prices using the [DexScreener](https://docs.dexscreener.com/) API.
 
 ## 設置 Setup
 
 將 `example.env` 更改為 `.env` 並修改裡面的內容
+
 Rename example.env to .env and modify its contents as follows:
 
 中文
@@ -39,6 +41,7 @@ BOARDCAST="off" # Enable or disable the bot's ability to send price messages to 
 ## 執行 Run
 
 之後使用 docker compose 一鍵啟動即可
+
 Afterwards, use Docker Compose to start the bot with a single command:
 
 ```sh
@@ -46,6 +49,7 @@ docker compose up -d --build
 ```
 
 或使用 node 執行原始碼
+
 Alternatively, you can run the source code using Node:
 
 ```sh
