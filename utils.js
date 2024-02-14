@@ -1,18 +1,17 @@
-const fetchPrice = async () => {
-    priceUsd = -1;
+const fetchPairData = async () => {
+    let data = null;
 
     try {
         const response = await fetch(
         `https://api.dexscreener.com/latest/dex/pairs/${process.env.CHAIN}/${process.env.PAIR_HASH}`
         );
-        const data = await response.json();
-        priceUsd = data.pair.priceUsd;
+        data = await response.json();
 
     } catch (error) {
         console.log(error);
     }
 
-    return priceUsd;
+    return data;
 }
 
-module.exports = { fetchPrice };
+module.exports = { fetchPairData };

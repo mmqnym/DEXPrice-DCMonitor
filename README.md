@@ -19,6 +19,8 @@ CHAIN="ethereum" # 詳細的名稱清單請參考 https://docs.dexscreener.com/a
 PAIR_HASH="0x646946F0518c6Ba27f1B2C6b4387EC6035bC42e3" # 範例交易對，使用的是 "丹 - PFPAsia" 的非官方交易對
 UPDATE_FREQUENCY = 5000 # in milliseconds
 
+MESSAGE_TYPE="embed" # embed or text, default is text
+
 # TASKs
 UPDATE_STATUS="on" # 讓機器人將價格反應在狀態上，"on" 開啟 or "off" 關閉
 BOARDCAST="off" # 讓機器人發送價格訊息到 "TARGET_CHANNEL_IDS" 指定的頻道，"on" 開啟 or "off" 關閉
@@ -32,6 +34,8 @@ TARGET_CHANNEL_IDS="Your Channel ID" # Separated by ',', e.g., 123456789,9876543
 CHAIN="ethereum" # For a detailed list of names, please refer to https://docs.dexscreener.com/api/reference
 PAIR_HASH="0x646946F0518c6Ba27f1B2C6b4387EC6035bC42e3" # Example pair hash for the unofficial "Dan - PFPAsia" pair
 UPDATE_FREQUENCY = 5000 # in milliseconds
+
+MESSAGE_TYPE="embed" # embed or text, default is text
 
 # TASKs
 UPDATE_STATUS="on" # Enable or disable the bot's ability to reflect prices in status. Use "on" or "off".
@@ -53,5 +57,6 @@ docker compose up -d --build
 Alternatively, you can run the source code using Node:
 
 ```sh
+npm i
 npm run start
 ```
